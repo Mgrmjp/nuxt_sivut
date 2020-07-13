@@ -1,10 +1,12 @@
 <template>
     <div class="page_container">
         <div class="images_cont">
-            <h1 class="header">Some examples of what I am able to produce</h1>
+            <h1 class="header">Some examples of what kind of design I am able to produce</h1>
             <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i" />
         </div>
+        <no-ssr placeholder="loading...">
         <VueGallerySlideshow :images="images" :index="index" @close="index = null" />
+        </no-ssr>
     </div>
 </template>
 
@@ -21,7 +23,8 @@ export default {
             require('../../assets/img/steam.jpg'),
             require('../../assets/img/imperial.jpg'),
             require('../../assets/img/defendix.jpg'),
-            require('../../assets/img/havu_avi.jpg')
+            require('../../assets/img/havu_avi.jpg'),
+            require('../../assets/img/voo_avi.jpg')
             ],
             index: null
         }

@@ -45,7 +45,7 @@ export default {
                 bullet1: 'Systematic nature',
                 bullet2: 'Problem solving capabilities',
                 bullet3: 'Knowledge in development and design',
-                bullet4: 'Communicating issues properly',
+                bullet4: 'Communicating issues calmly',
             }
             ]
         }
