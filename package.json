@@ -1,0 +1,21 @@
+{
+  "name": "Saitit_2020",
+  "version": "1.0.0",
+  "description": "My wondrous Nuxt.js project",
+  "author": "mgrmjp",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "vue-gallery-slideshow": "^1.5.0",
+    "vue-runtime-helpers": "^1.1.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0"
+  }
+}

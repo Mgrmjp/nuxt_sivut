@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="mgr-logo" unicode="&#xe800;" d="M520 251l-173-188c0 0 52-22 92-87 48-76 81-105 81-105 0 0 33 29 80 105 41 65 92 87 92 87l-172 188z m-65 72l-444 521c0 0-15-343 41-550 33-118 230-197 230-197l173 226z m574 521l-444-521 172-226c0 0 198 79 230 197 57 207 42 550 42 550z" horiz-adv-x="1041" />
+</font>
+</defs>
+</svg>
