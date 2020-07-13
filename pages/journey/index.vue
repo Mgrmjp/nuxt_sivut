@@ -7,7 +7,7 @@
 
         <h3 class="email_text">Reach me <i class="icon-mgr-logo bullet_icon" /> miikka.mla[at]gmail.com</h3>
 
-        <a class="cv_link" href="../../assets/files/cv_2020.pdf"><h2 class="cv_text">Click here to read <strong>CV</strong> (pdf)</h2></a>
+        <a class="cv_link" href="/cv_2020.pdf"><h2 class="cv_text">Click here to read <strong>CV</strong> (pdf)</h2></a>
 
         <div class="border_test">
             <JourneyRow year="2015" description="Graduated high school and had no idea where I would end up" />
