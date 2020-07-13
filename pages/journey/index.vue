@@ -7,6 +7,8 @@
 
         <h3 class="email_text">Reach me <i class="icon-mgr-logo bullet_icon" /> miikka.mla[at]gmail.com</h3>
 
+        <a class="cv_link" href="../../assets/files/cv_2020.pdf"><h2 class="cv_text">Click here to read <strong>CV</strong> (pdf)</h2></a>
+
         <div class="border_test">
             <JourneyRow year="2015" description="Graduated high school and had no idea where I would end up" />
             <div class="filler"></div>
@@ -101,11 +103,26 @@ export default {
     display: flex;
     flex: 1;
     width: 30vw;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     color: rgba(253, 253, 253, 0.938);
     font-weight: 100;
     font-size: 1.5em;
     letter-spacing: 1px;
+}
+
+.cv_link {
+    align-self: center; 
+}
+
+.cv_text {
+    text-align: left;
+    color: rgba(253, 253, 253, 1);
+    font-weight: 400;
+    font-size: 1.1em;
+    width: 30vw;
+    letter-spacing: 1px;
+    flex-direction: column;
+    margin-bottom: 3em;
 }
 
 .border_test {
