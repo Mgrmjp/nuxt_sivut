@@ -16,16 +16,16 @@ export default {
     data() {
         return {
             images: [
-            require('../../assets/img/mindsofmedia.jpg'),
-            require('../../assets/img/teo.jpg'),
-            require('../../assets/img/counterpoints.jpg'),
-            require('../../assets/img/steam.jpg'),
-            require('../../assets/img/imperial.jpg'),
-            require('../../assets/img/defendix.jpg'),
-            require('../../assets/img/havu_avi.jpg'),
-            require('../../assets/img/voo_avi.jpg'),
-            require('../../assets/img/worlds_ingame.jpg'),
-            require('../../assets/img/worlds_champselect.jpg')
+                require('../../assets/img/mindsofmedia.jpg'),
+                require('../../assets/img/teo.jpg'),
+                require('../../assets/img/counterpoints.jpg'),
+                require('../../assets/img/steam.jpg'),
+                require('../../assets/img/imperial.jpg'),
+                require('../../assets/img/defendix.jpg'),
+                require('../../assets/img/havu_avi.jpg'),
+                require('../../assets/img/voo_avi.jpg'),
+                require('../../assets/img/worlds_ingame.jpg'),
+                require('../../assets/img/worlds_champselect.jpg')
             ],
             index: null
         }
@@ -35,9 +35,13 @@ export default {
     },
     head () {
         return {
-            title: 'Miikka Mäkelä ∙ 2020',
+            title: 'Gallery ∙ MM',
             meta: [
-                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a developer companied with solid skills in design.' }
+                { 
+                    hid: 'Miikka Mäkelä gallery',
+                    name: 'Gallery page for designs',
+                    content: 'Showcasing my design expertise.'
+                }
             ]
         }
     }

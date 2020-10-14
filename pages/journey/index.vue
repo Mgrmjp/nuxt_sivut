@@ -50,9 +50,13 @@ export default {
 
     head () {
         return {
-            title: 'Miikka Mäkelä ∙ 2020',
+            title: 'Journey ∙ MM',
             meta: [
-                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a developer companied with solid skills in design.' }
+                { 
+                    hid: 'Miikka Mäkelä journey so far',
+                    name: 'Opening the journey to this day',
+                    content: 'Giving an overview about key areas and accomplishments.'
+                }
             ]
         }
     },

@@ -56,7 +56,11 @@ export default {
     return {
       title: 'Miikka Mäkelä ∙ 2020',
       meta: [
-        { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a programmer with skills in design as well.' }
+        { 
+          hid: 'Miikka Mäkelä portfolio',
+          name: 'Miikka Mäkelä portfolio landing page', 
+          content: 'Miikka Mäkelä is a frontend developer with skills in design as well.'
+        }
       ]
     }
   }

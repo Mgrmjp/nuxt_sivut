@@ -56,9 +56,13 @@ export default {
 
     head () {
         return {
-            title: 'Miikka Mäkelä ∙ 2020',
+            title: 'Roles ∙ MM',
             meta: [
-                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a programmer with skills in design as well.' }
+                { 
+                    hid: 'Miikka Mäkelä roles',
+                    name: 'Miikka Mäkelä in different roles', 
+                    content: 'Descriping how I am in different points of view'
+                }
             ]
     }
   }
