@@ -74,7 +74,7 @@ export default {
 .large_header {
   font-size: 2.6em;
   font-weight: 900;
-  color: rgb(77, 21, 21);
+  color: rgba(216, 216, 216, 0.788);
   text-align: center;
   margin-top: 112px;
   margin-bottom: 48px;
@@ -87,6 +87,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .skill_box {

@@ -1,12 +1,11 @@
 <template>
     <div class="page_container">
         <div class="images_cont">
-            <h1 class="header">Some examples of what kind of design I am able to produce</h1>
             <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i" />
         </div>
-        <no-ssr placeholder="loading...">
+        <client-only placeholder="loading...">
         <VueGallerySlideshow :images="images" :index="index" @close="index = null" />
-        </no-ssr>
+        </client-only>
     </div>
 </template>
 
@@ -24,7 +23,9 @@ export default {
             require('../../assets/img/imperial.jpg'),
             require('../../assets/img/defendix.jpg'),
             require('../../assets/img/havu_avi.jpg'),
-            require('../../assets/img/voo_avi.jpg')
+            require('../../assets/img/voo_avi.jpg'),
+            require('../../assets/img/worlds_ingame.jpg'),
+            require('../../assets/img/worlds_champselect.jpg')
             ],
             index: null
         }
@@ -36,7 +37,7 @@ export default {
         return {
             title: 'Miikka Mäkelä ∙ 2020',
             meta: [
-                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a programmer with skills in design as well.' }
+                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a developer companied with solid skills in design.' }
             ]
         }
     }
@@ -54,31 +55,21 @@ export default {
     margin-bottom: 6em;
 }
 
-.header {
-    margin-bottom: 3em;
-    color: rgba(253, 253, 253, 0.938);
-    font-weight: 100;
-    font-size: 1em;
-}
-
 .images_cont {
     display: flex;
-    width: 400px;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
 .image {
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    max-height: 200px;
-    width: auto;
-    height: auto;
+    max-width: 300px;
     cursor: pointer;
     object-fit: cover;
     box-shadow: 0px 5px 5px rgba(29, 29, 29, 0.479);
-    margin: 1em;
     object-position: top;
+    flex: 0 50%;
+    margin: 2em;
 }
 
 </style>

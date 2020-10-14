@@ -9,6 +9,7 @@
         <nuxt-link exact :class="currentPage.includes('roles') ? activeClass : ''" class="nav_item" to="/roles">ROLES</nuxt-link>
         <nuxt-link exact :class="currentPage.includes('journey') ? activeClass : ''" class="nav_item" to="/journey">JOURNEY</nuxt-link>
         <nuxt-link exact :class="currentPage.includes('gallery') ? activeClass : ''" class="nav_item" to="/gallery">GALLERY</nuxt-link>
+        <nuxt-link exact :class="currentPage.includes('misc') ? activeClass : ''" class="nav_item" to="/misc">MISC</nuxt-link>
     </div>
     <div class="filler">
     </div>
@@ -67,7 +68,7 @@ export default {
 
     .navigation {
         display: flex;
-        font-size: 1.2em;
+        font-size: 1.3em;
         background-color: rgb(26, 26, 26);
         position: absolute;
         top: 0;
@@ -77,6 +78,7 @@ export default {
         padding-bottom: 1em;
         z-index: 100;
         flex-direction: row;
+        box-shadow: 0px 5px 10px rgba(47, 47, 47, 0.466);
     }
 
     .filler {
@@ -98,6 +100,7 @@ export default {
         text-align: center;
         justify-content: center;
         flex-direction: row;
+        letter-spacing: 1px;
     }
 
     .nav_name {

@@ -28,8 +28,8 @@ export default {
     display: flex;
     flex: 1;
     align-items: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .image_container {
@@ -45,6 +45,7 @@ export default {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-weight: 400;
+    font-size: 0.8em;
 }
 
 .tech_logo {

@@ -5,9 +5,16 @@
             <h2 class="birthdate_text">years old</h2>
         </div>
 
+        <div class="email_and_cv">
         <h3 class="email_text">Reach me <i class="icon-mgr-logo bullet_icon" /> miikka.mla[at]gmail.com</h3>
 
-        <a class="cv_link" href="/cv_2020.pdf"><h2 class="cv_text">Click here to read <strong>CV</strong> (pdf)</h2></a>
+        <div class="links_to_pages">
+            <a class="page_linky" href="https://instagram.com/mgrutkast">Instagram</a>
+            <a class="page_linky" href="https://github.com/mgrmjp">Github</a>
+        </div>
+
+        <a class="cv_link" href="/mäkelä_miikka_cv_2020.pdf"><h2 class="cv_text">Click here to read <strong>CV</strong> (pdf)</h2></a>
+        </div>
 
         <div class="border_test">
             <JourneyRow year="2015" description="Graduated high school and had no idea where I would end up" />
@@ -19,8 +26,10 @@
             Worked in graphic design and programming duties." />
             <div class="filler"></div>
             <JourneyRow year="2020" season="Spring" description="Finished internship at Zaibatsu with valuable experiences gained.
-            Improved massively at JS concepts, learned TypeScript, grasped OOP better and grew as a 3D-modeller. 
-            Graduated from JAMK as a media engineer." />
+            Improved massively at JS concepts, learned TypeScript, grasped OOP better and grew as a 3D-modeller." />
+            <div class="filler"></div>
+            <JourneyRow year="2020" season="Summer" description="Graduated from JAMK as a media engineer. My dad passed away.
+            Chaotic times all around. Meditated a bunch to get answers and find some calm. Doubled down on reading habits to get perspective" />
         </div>
     </div>
 </template>
@@ -43,7 +52,7 @@ export default {
         return {
             title: 'Miikka Mäkelä ∙ 2020',
             meta: [
-                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a programmer with skills in design as well.' }
+                { hid: 'Personal portfolio', name: 'Personal portfolio', content: 'Miikka Mäkelä is a developer companied with solid skills in design.' }
             ]
         }
     },
@@ -51,7 +60,9 @@ export default {
     mounted() {
         let currentDate = new Date()
 
-        let age = currentDate.getMonth() > 10 ? currentDate.getFullYear() - 1996 : currentDate.getFullYear() - 1997
+        console.log(currentDate.getMonth())
+
+        let age = currentDate.getMonth() > 8 ? currentDate.getFullYear() - 1996 : currentDate.getFullYear() - 1997
 
         this.currentAge = age
     }
@@ -75,7 +86,6 @@ export default {
 
 .age_cont {
     display: flex;
-    min-width: 30vw;
     flex-direction: row;
     align-self: center;
     padding-top: 3em;
@@ -97,21 +107,40 @@ export default {
     margin-left: 1em;
 }
 
+.email_and_cv {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
 .email_text {
     text-align: left;
     align-self: center;
     display: flex;
     flex: 1;
-    width: 30vw;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     color: rgba(253, 253, 253, 0.938);
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.links_to_pages {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.page_linky {
+    margin: 1em;
     letter-spacing: 1px;
 }
 
 .cv_link {
     align-self: center; 
+    border: 1px solid white;
+    margin: 2em;
 }
 
 .cv_text {
@@ -119,10 +148,10 @@ export default {
     color: rgba(253, 253, 253, 1);
     font-weight: 400;
     font-size: 1.1em;
-    width: 30vw;
     letter-spacing: 1px;
-    flex-direction: column;
-    margin-bottom: 3em;
+    flex-direction: row;
+    padding: 0.8em;
+    align-self: flex-start
 }
 
 .border_test {
@@ -130,6 +159,7 @@ export default {
     height: 100vh;
     border-left: rgb(253, 253, 253) 2px solid;
     align-self: center;
+    margin-top: 5em;
 }
 
 .bullet_icon {

@@ -11,8 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "vue-gallery-slideshow": "^1.5.0",
+    "nuxt": "^2.14.6",
+    "vue-gallery-slideshow": "^1.5.2",
     "vue-runtime-helpers": "^1.1.2"
   },
   "devDependencies": {

@@ -71,7 +71,7 @@ export default {
 .large_header {
   font-size: 3.8em;
   font-weight: 900;
-  color: rgb(77, 21, 21);
+  color: rgba(216, 216, 216, 0.788);
   text-align: center;
   margin-top: 112px;
 }
