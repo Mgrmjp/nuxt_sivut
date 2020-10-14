@@ -29,7 +29,7 @@
             Improved massively at JS concepts, learned TypeScript, grasped OOP better and grew as a 3D-modeller." />
             <div class="filler"></div>
             <JourneyRow year="2020" season="Summer" description="Graduated from JAMK as a media engineer. My dad passed away.
-            Chaotic times all around. Meditated a bunch to get answers and find some calm. Doubled down on reading habits to get perspective" />
+            Chaotic times all around. Meditated a bunch to get answers and find some calm. Doubled down on reading habits to get perspective." />
         </div>
     </div>
 </template>
