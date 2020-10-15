@@ -13,7 +13,16 @@
             <a class="page_linky" href="https://github.com/mgrmjp">Github</a>
         </div>
 
-        <a class="cv_link" href="/mäkelä_miikka_cv_2020.pdf"><h2 class="cv_text">Click here to read <strong>CV</strong> (pdf)</h2></a>
+        <a class="cv_link" href="/mäkelä_miikka_cv_2020.pdf">
+            <h2 class="cv_text">Click here to read <strong class="boldy">Finnish</strong> CV (pdf)</h2>
+            <country-flag class="flaggy" country='fi' size='normal'/>
+        </a>
+
+        <a class="cv_link" href="/mäkelä_miikka_cv_2020_english.pdf">
+            <h2 class="cv_text">Click here to read <strong class="boldy">English CV</strong> (pdf)</h2>
+            <country-flag class="flaggy" country='gb' size='normal'/>
+        </a>
+
         </div>
 
         <div class="border_test">
@@ -36,6 +45,7 @@
 
 <script>
 import JourneyRow from '@/components/JourneyRow'
+import CountryFlag from 'vue-country-flag'
 
 export default {
     data() {
@@ -45,7 +55,8 @@ export default {
     },
 
     components: {
-        JourneyRow
+        JourneyRow,
+        CountryFlag
     },
 
     head () {
@@ -142,12 +153,23 @@ export default {
 }
 
 .cv_link {
+    display: flex;
     align-self: center; 
     border: 1px solid white;
     margin: 2em;
 }
 
+.boldy {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.flaggy {
+    align-self: center;
+}
+
 .cv_text {
+    display: flex;
     text-align: left;
     color: rgba(253, 253, 253, 1);
     font-weight: 400;
@@ -155,7 +177,7 @@ export default {
     letter-spacing: 1px;
     flex-direction: row;
     padding: 0.8em;
-    align-self: flex-start
+    align-self: center;
 }
 
 .border_test {
