@@ -189,7 +189,7 @@ export default {
 
 .border_test {
     width: 30vw;
-    height: 100vh;
+    height: 130vh;
     border-left: rgb(253, 253, 253) 2px solid;
     align-self: center;
     margin-top: 5em;
