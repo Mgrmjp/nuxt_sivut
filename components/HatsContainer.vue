@@ -42,6 +42,7 @@ export default {
     color: white;
     font-size: 2em;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .bullet_icon {

@@ -14,7 +14,7 @@
         </div>
 
         <a class="cv_link" href="/mäkelä_miikka_cv_2020.pdf">
-            <h2 class="cv_text">Click here to read <strong class="boldy">Finnish</strong> CV (pdf)</h2>
+            <h2 class="cv_text">Click here to read <strong class="boldy">Finnish CV</strong> (pdf)</h2>
             <country-flag class="flaggy" country='fi' size='normal'/>
         </a>
 
@@ -26,19 +26,26 @@
         </div>
 
         <div class="border_test">
-            <JourneyRow year="2015" description="Graduated high school and had no idea where I would end up" />
+            <JourneyRow year="2010" description="Got interested in graphic design and made my first creations for a CoD MW2 clan I was a part of. 
+            Mainly old school YouTube background banners and profile pictures for Steam." />
             <div class="filler"></div>
-            <JourneyRow year="2015 - 2016" description="Served a 6 month military service in Niinisalo" />
-            <JourneyRow year="2016" season="Fall" description="Started media engineering studies at JAMK" />
+            <JourneyRow year="2015" description="Graduated high school and had no idea where I would end up.
+            Knew I wanted to design and hone my skills" />
+            <div class="filler"></div>
+            <JourneyRow year="2015 - 2016" description="Served a 6 month military service in Niinisalo." />
+            <JourneyRow year="2016" season="Fall" description="Started media engineering (ICT) studies at Jyväskylä University of Applied Sciences." />
             <div class="filler"></div>
             <JourneyRow year="2019" season="Fall" description="Began internship at indie game dev company Zaibatsu Interactive Oy. 
-            Worked in graphic design and programming duties." />
+            Worked in graphic design and programming duties. Made game objects, fleshed out game concept ideas, created user interfaces and worked
+            with JavaScript, Vue, React and TypeScript. Also tested a bunch of games, gave feedback and looked for bugs." />
             <div class="filler"></div>
             <JourneyRow year="2020" season="Spring" description="Finished internship at Zaibatsu with valuable experiences gained.
-            Improved massively at JS concepts, learned TypeScript, grasped OOP better and grew as a 3D-modeller." />
+            Improved massively at JS concepts, learned TypeScript, grasped OOP better and grew as a 3D-modeller. I value the fact I got to
+            try on so many different types of hats and give my best shot at different types of work." />
             <div class="filler"></div>
-            <JourneyRow year="2020" season="Summer" description="Graduated from JAMK as a media engineer. My dad passed away.
-            Chaotic times all around. Meditated a bunch to get answers and find some calm. Doubled down on reading habits to get perspective." />
+            <JourneyRow year="2020" season="Summer" description="Graduated from Jyväskylä University of Applied Sciences as a media engineer. My dad passed away and
+            difficult times ensued. Meditated a bunch to get answers and find some calm. Doubled down on reading habits to get perspective.
+            I learned to value honesty and being more open. I'm sure I will continue dealing with this for many years to come." />
         </div>
     </div>
 </template>

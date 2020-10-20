@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="large_header">HATS I WEAR</h1>
-        <h2 class="desc_header">Tackling issues from different angles</h2>
+        <h2 class="desc_header">Tackling issues from different angles.</h2>
         <HatsContainer :hats="hats" />
     </div>    
 </template>

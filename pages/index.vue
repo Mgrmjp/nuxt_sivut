@@ -1,6 +1,11 @@
 <template>
-    <div>
+    <div class="index_container">
+        <p class="self_intro">
+          Miikka Mäkelä is a front-end developer, graphic designer and much more.
+          This portfolio site was created with Nuxt.js and brought online with GitHub Pages and Netlify.
+        </p>
         <h1 class="large_header">THINGS I KNOW</h1>
+        <h2 class="quote">"Learn More, Know Less" ~ Neil Strauss</h2>
         <div class="skills">
           <div class="skill_box">
 
@@ -41,7 +46,6 @@
 
           </div>
         </div>
-        <h1 class="large_header bottom">FOR NOW</h1>
     </div>
 </template>
 
@@ -75,13 +79,35 @@ export default {
 }
 */
 
+.index_container {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.self_intro {
+  margin-top: 10em;
+  color: white;
+  text-align: left;
+  width: 500px;
+  align-self: center;
+  font-size: 1.1em;
+  margin-bottom: 4em;
+}
+
 .large_header {
   font-size: 2.6em;
   font-weight: 900;
   color: rgba(216, 216, 216, 0.788);
   text-align: center;
-  margin-top: 112px;
   margin-bottom: 48px;
+}
+
+.quote {
+  font-size: 1.2em;
+  color: white;
+  font-style: italic;
+  margin-bottom: 2em;
 }
 
 .skills {
@@ -108,12 +134,6 @@ export default {
   font-weight: 900;
   font-size: 1.2em;
   letter-spacing: 1px;
-}
-
-.bottom {
-  margin-top: 56px;
-  margin-bottom: 64px;
-  opacity: 60%;
 }
 
 </style>
