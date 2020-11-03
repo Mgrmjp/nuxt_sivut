@@ -20,6 +20,7 @@ export default {
     data() {
         return {
             images: [
+                require('../../assets/img/summoning_insight_redesign.jpg'),
                 require('../../assets/img/mindsofmedia.jpg'),
                 require('../../assets/img/teo.jpg'),
                 require('../../assets/img/counterpoints.jpg'),
