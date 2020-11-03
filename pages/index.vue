@@ -1,8 +1,9 @@
 <template>
     <div class="index_container">
         <p class="self_intro">
-          Miikka Mäkelä is a front-end developer, graphic designer and much more.
-          This portfolio site was created with Nuxt.js and brought online with GitHub Pages and Netlify.
+          Miikka Mäkelä is a front-end developer 👓, graphic designer 💻 and much more—once you get to know him.
+          This portfolio site was created with <a id="nuxt_link" href="https://nuxtjs.org/">Nuxt.js</a> and brought online with 
+          GitHub Pages and Netlify. My goal is to one day be good enough so I can help others in their journey through life. 🌟
         </p>
         <h1 class="large_header">THINGS I KNOW</h1>
         <h2 class="quote">"Learn More, Know Less" ~ Neil Strauss</h2>
@@ -93,6 +94,18 @@ export default {
   align-self: center;
   font-size: 1.1em;
   margin-bottom: 4em;
+}
+
+#nuxt_link {
+  color: #00c58e;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#nuxt_link:hover {
+  color: #0a7c5c;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .large_header {

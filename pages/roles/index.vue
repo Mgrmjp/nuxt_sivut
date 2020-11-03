@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="large_header">HATS I WEAR</h1>
-        <h2 class="desc_header">Tackling issues from different angles.</h2>
+        <h2 class="desc_header">🔎 Tackling issues from different angles. 🔍</h2>
         <HatsContainer :hats="hats" />
     </div>    
 </template>
@@ -14,34 +14,34 @@ export default {
         return {
             hats: [
             {
-                title: 'Co-worker',
+                title: 'Co-worker 🤝🏻',
                 bullet1: 'Being curious and present',
                 bullet2: 'Making allies not enemies',
                 bullet3: 'Getting results as a group',
                 bullet4: 'Helping, asking questions, honest communication',
             },
             {
-                title: 'Developer',
+                title: 'Developer ♟',
                 bullet1: 'Avoiding stagnation',
                 bullet2: 'Being open to change',
                 bullet3: 'Learning by doing',
                 bullet4: 'Failure is a teacher',
             },
             {
-                title: 'Designer',
+                title: 'Designer 💎',
                 bullet1: 'User focused creating',
                 bullet2: 'Eye for small details',
                 bullet3: 'Trial and error toward best result',
             },
             {
-                title: 'Gamer',
+                title: 'Gamer 🎮',
                 bullet1: 'Helping others succeed',
                 bullet2: 'Growth mindset',
                 bullet3: 'Honing fundamentals',
                 bullet4: 'Learning from others',
             },
             {
-                title: 'Tester',
+                title: 'Tester 🧪',
                 bullet1: 'Systematic nature',
                 bullet2: 'Problem solving capabilities',
                 bullet3: 'Knowledge in development and design',

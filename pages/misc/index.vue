@@ -1,6 +1,6 @@
 <template>
     <div class="container_misc">
-        <h2 class="desc_header">Top 5 books that have impacted my life:</h2>
+        <h2 class="desc_header">Top 5 books 📚 that have impacted my life:</h2>
         <ul class="book_list">
           <div class="book_item"><span class="number_style">1</span> <p><strong>Seneca</strong> • Letters from a Stoic</p></div>
           <div class="book_item"><span class="number_style">2</span> <p><strong>Thich Nhat Hanh</strong> • Fear</p></div>

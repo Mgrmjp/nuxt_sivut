@@ -5,6 +5,9 @@
             <h2 class="birthdate_text">years old</h2>
         </div>
 
+        <h2 class="quote">"I wish everyone could get rich and famous and everything they ever 
+        dreamed of so they can see that's not the answer." ~ Jim Carrey</h2>
+
         <div class="email_and_cv">
         <h3 class="email_text">Reach me <i class="icon-mgr-logo bullet_icon" /> miikka.mla[at]gmail.com</h3>
 
@@ -127,6 +130,15 @@ export default {
     font-size: 1em;
     align-self: flex-end;
     margin-left: 1em;
+}
+
+.quote {
+  font-size: 1em;
+  color: white;
+  font-style: italic;
+  margin-bottom: 4em;
+  width: 500px;
+  align-self: center;
 }
 
 .email_and_cv {
