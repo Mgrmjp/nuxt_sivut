@@ -1,5 +1,9 @@
 <template>
     <div class="page_container">
+
+        <h1 id="page_insight">I heard somewhere that design is not only about putting stuff in—but it is also about leaving stuff out.
+            That has become my design philosophy quite heavily; as I look and ponder about that very idea when thinking about solutions.</h1>
+
         <div class="images_cont">
             <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i" />
         </div>
@@ -57,6 +61,14 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 6em;
+}
+
+#page_insight {
+    color: white;
+    width: 600px;
+    text-align: left;
+    margin-bottom: 2em;
+    font-size: 1.2em;
 }
 
 .images_cont {
