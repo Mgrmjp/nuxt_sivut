@@ -16,12 +16,12 @@
             <a class="page_linky" href="https://github.com/mgrmjp">Github</a>
         </div>
 
-        <a class="cv_link" href="/mäkelä_miikka_cv_2020.pdf">
+        <a class="cv_link" href="/makela_miikka_cv_2021.pdf">
             <h2 class="cv_text">Click here to read <strong class="boldy">Finnish CV</strong> (pdf)</h2>
             <country-flag class="flaggy" country='fi' size='normal'/>
         </a>
 
-        <a class="cv_link" href="/mäkelä_miikka_cv_2020_english.pdf">
+        <a class="cv_link" href="/makela_miikka_cv_2021_english.pdf">
             <h2 class="cv_text">Click here to read <strong class="boldy">English CV</strong> (pdf)</h2>
             <country-flag class="flaggy" country='gb' size='normal'/>
         </a>
