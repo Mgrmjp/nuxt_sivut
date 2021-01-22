@@ -46,9 +46,9 @@
             Improved massively at JS concepts, learned TypeScript, grasped OOP better and grew as a 3D-modeller. I value the fact I got to
             try on so many different types of hats and give my best shot at different types of work." />
             <div class="filler"></div>
-            <JourneyRow year="2020" season="Summer" description="Graduated from Jyväskylä University of Applied Sciences as a media engineer. My dad passed away and
-            difficult times ensued. Meditated a bunch to get answers and find some calm. Doubled down on reading habits to get perspective.
-            I learned to value honesty and being more open. I'm sure I will continue dealing with this for many years to come." />
+            <JourneyRow year="2020" season="Summer" description="Graduated from Jyväskylä University of Applied Sciences as a media engineer. My dad passed away suddenly and
+            life got confusing and shaken up. Meditated and read books to get perspective.
+            I learned to value honesty and being more open." />
         </div>
     </div>
 </template>
