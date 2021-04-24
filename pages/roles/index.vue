@@ -18,34 +18,35 @@ export default {
                 bullet1: 'Being curious and present',
                 bullet2: 'Making allies not enemies',
                 bullet3: 'Getting results as a group',
-                bullet4: 'Helping, asking questions, honest communication',
+                bullet4: 'Helping, asking questions, honest communication'
             },
             {
                 title: 'Developer 🧠',
                 bullet1: 'Avoiding stagnation',
                 bullet2: 'Being open to change',
                 bullet3: 'Learning by doing',
-                bullet4: 'Failure is a teacher',
+                bullet4: 'Using failure as a teacher'
             },
             {
                 title: 'Designer 💎',
                 bullet1: 'User focused creating',
                 bullet2: 'Eye for small details',
-                bullet3: 'Trial and error toward best result',
+                bullet3: 'Trial and error toward best result'
             },
             {
                 title: 'Gamer 🎮',
                 bullet1: 'Helping others succeed',
                 bullet2: 'Growth mindset',
                 bullet3: 'Honing fundamentals',
-                bullet4: 'Learning from others',
+                bullet4: 'Learning from others'
             },
             {
-                title: 'Tester 🧪',
+                title: 'Quality Assurance 🧪',
                 bullet1: 'Systematic nature',
                 bullet2: 'Problem solving capabilities',
-                bullet3: 'Knowledge in development and design',
-                bullet4: 'Communicating issues calmly',
+                bullet3: 'Taking several points of view into consideration',
+                bullet4: 'Knowledge in development and design',
+                bullet5: 'Communicating issues calmly'
             }
             ]
         }

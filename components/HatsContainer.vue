@@ -3,10 +3,11 @@
         <div class="list_container" v-for="(hat, index) in hats" :key="index">
             <h2 class="hats_title">{{hat.title}}</h2>
             <ul>
-                <li><i class="icon-mgr-logo bullet_icon" />{{hat.bullet1}}</li>
-                <li><i class="icon-mgr-logo bullet_icon" />{{hat.bullet2}}</li>
-                <li><i class="icon-mgr-logo bullet_icon" />{{hat.bullet3}}</li>
+                <li v-if="hat.bullet1"><i class="icon-mgr-logo bullet_icon" />{{hat.bullet1}}</li>
+                <li v-if="hat.bullet2"><i class="icon-mgr-logo bullet_icon" />{{hat.bullet2}}</li>
+                <li v-if="hat.bullet3"><i class="icon-mgr-logo bullet_icon" />{{hat.bullet3}}</li>
                 <li v-if="hat.bullet4"><i class="icon-mgr-logo bullet_icon" />{{hat.bullet4}}</li>
+                <li v-if="hat.bullet5"><i class="icon-mgr-logo bullet_icon" />{{hat.bullet5}}</li>
             </ul>
         </div>
     </div>
@@ -18,6 +19,10 @@ export default {
         hats: {
             Type: Array
         }
+    },
+    
+    mounted() {
+        console.log(this.hats)
     }
 }
 </script>
