@@ -49,6 +49,8 @@
             <JourneyRow year="2020" season="Summer" description="Graduated from Jyväskylä University of Applied Sciences as a media engineer. My dad passed away suddenly and
             life got confusing and shaken up. Meditated and read books to get perspective.
             I learned to value honesty and being more open." />
+            <div class="filler"></div>
+            <JourneyRow year="2021" season="Spring" description="Started work at Into-Digital doing web development with WordPress." />
         </div>
     </div>
 </template>
@@ -94,7 +96,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .filler {
     margin-top: 3em;
@@ -137,7 +139,7 @@ export default {
   color: white;
   font-style: italic;
   margin-bottom: 4em;
-  width: 500px;
+  width: 90%;
   align-self: center;
 }
 
@@ -171,11 +173,20 @@ export default {
     letter-spacing: 1px;
 }
 
+.page_linky:hover {
+    text-shadow: 0px 0px 4px white;
+}
+
 .cv_link {
     display: flex;
     align-self: center; 
     border: 1px solid white;
     margin: 2em;
+    padding: 0 16px;
+}
+
+.cv_link:hover {
+    background-color: rgba(75, 18, 18, 0.787);
 }
 
 .boldy {
@@ -200,11 +211,18 @@ export default {
 }
 
 .border_test {
-    width: 30vw;
-    height: 130vh;
+    width: 70vw;
     border-left: rgb(253, 253, 253) 2px solid;
     align-self: center;
     margin-top: 5em;
+
+    @include sm {
+        width: 50vw;
+    }
+
+    @include lg {
+        width: 30vw;
+    }
 }
 
 .bullet_icon {
@@ -230,7 +248,6 @@ export default {
         align-self: center;
         width: 70vw;
         margin-bottom: 3em;
-        color: rgba(75, 21, 21, 0.938);
         font-weight: 500;
         font-size: 1.2em;
     }

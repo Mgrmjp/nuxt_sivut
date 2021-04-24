@@ -3,26 +3,44 @@
       
       <Navigation />
 
-      <MobileNav />
+      <MobileNav v-show="isModalVisible" @close="closeModal" />
       
       <div class="outer_red">
         <div class="inner_red">
+          <div class="mobile-btn-container">
+            <button @click="showModal" class="show-mobile-nav">
+              <span style="font-size: 48px;" class="material-icons-outlined">menu</span>
+            </button>
+          </div>
           <nuxt />
         </div>
-      </div>
-      <Gradient />
+      </div> 
     </div>
 </template>
 
 <script>
-import Gradient from '@/components/Gradient'
 import Navigation from '@/components/Navigation'
 import MobileNav from '@/components/MobileNav'
 
 export default {
 
+  data() {
+      return {
+          activeClass: 'active',
+          isModalVisible: false
+      }
+  },
+
+  methods: {
+     showModal() {
+       this.isModalVisible = true;
+     },
+     closeModal() {
+       this.isModalVisible = false;
+     }
+  },
+  
   components: {
-    Gradient,
     MobileNav,
     Navigation
   },
@@ -30,12 +48,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 html {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -43,14 +60,30 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(22, 22, 22);
+  overflow-x: hidden;
+}
+
 ::-moz-selection { /* Code for Firefox */
-  color: rgb(180, 180, 180);
+  color: rgb(250, 250, 250);
   background: rgb(75, 21, 21);;
 }
 
 ::selection {
-  color: rgb(180, 180, 180);
+  color: rgb(250, 250, 250);
   background: rgb(75, 21, 21);;
+}
+
+.mobile-btn-container {
+  display: flex;
+  justify-content: flex-end;
+
+  .show-mobile-nav {
+    color: white;
+    margin: 16px;
+    margin-top: 32px;
+  }
 }
 
 .container {
@@ -90,10 +123,6 @@ html {
   margin: 0;
 }
 
-body {
-  background-color: rgb(22, 22, 22);
-}
-
 @media screen and (max-width: 1050px) {
 
   .outer_red {
@@ -102,14 +131,6 @@ body {
 
   .inner_red {
     max-width: 80vw;
-  }
-
-}
-
-@media screen and (max-width: 620px) {
-
-  .inner_red {
-    padding-top: 12em;
   }
 
 }

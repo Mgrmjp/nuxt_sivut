@@ -1,14 +1,19 @@
 <template>
     <nav class="navigation">
+        <div class="mobile-btn-container">
+            <button @click="$emit('close')" class="mobile-btn">
+                <span style="font-size: 48px;" class="material-icons-outlined">close</span>
+            </button>
+        </div>
         <div class="name_plus_logo">
             <img class="page_logo" src="@/assets/logos/mgr.png" />
             <h3 class="nav_name">Miikka Mäkelä</h3>
         </div>
         <div class="page_links">
-            <nuxt-link exact :class="currentPage.length === 1 ? activeClass : ''" class="nav_item" to="/">HOME</nuxt-link>
-            <nuxt-link exact :class="currentPage.includes('roles') ? activeClass : ''" class="nav_item" to="/roles">ROLES</nuxt-link>
-            <nuxt-link exact :class="currentPage.includes('journey') ? activeClass : ''" class="nav_item" to="/journey">JOURNEY</nuxt-link>
-            <nuxt-link exact :class="currentPage.includes('gallery') ? activeClass : ''" class="nav_item" to="/gallery">GALLERY</nuxt-link>
+            <nuxt-link @click.native="$emit('close')" exact :class="currentPage.length === 1 ? activeClass : ''" class="nav_item" to="/">HOME</nuxt-link>
+            <nuxt-link @click.native="$emit('close')" exact :class="currentPage.includes('roles') ? activeClass : ''" class="nav_item" to="/roles">ROLES</nuxt-link>
+            <nuxt-link @click.native="$emit('close')" exact :class="currentPage.includes('journey') ? activeClass : ''" class="nav_item" to="/journey">JOURNEY</nuxt-link>
+            <nuxt-link @click.native="$emit('close')" exact :class="currentPage.includes('gallery') ? activeClass : ''" class="nav_item" to="/gallery">GALLERY</nuxt-link>
         </div>
         <div class="filler">
         </div>
@@ -41,7 +46,17 @@ export default {
     display: none;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 864px) {
+
+    .mobile-btn-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-btn {
+        color: white;
+        font-size: 40px;
+    }
 
     .active {
         color: white;
@@ -54,10 +69,12 @@ export default {
         display: flex;
         font-size: 1.2em;
         background-color: rgb(26, 26, 26);
-        position: absolute;
+        position: sticky;
         top: 0;
         justify-content: space-between;
-        min-width: 99vw;
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
         padding: 1em;
         z-index: 100;
         flex-direction: column;
@@ -65,8 +82,8 @@ export default {
 
     .name_plus_logo {
         display: flex;
-        flex: 1;
         align-self: center;
+        flex-direction: row;
     }
 
     .arrow_icon {
@@ -80,12 +97,12 @@ export default {
     }
 
     .page_links {
+        margin-top: 10%;
         display: flex;
         flex: 1;
         align-self: center;
         justify-self: center;
         text-align: left;
-        justify-content: center;
         flex-direction: column;
     }
 
@@ -103,6 +120,7 @@ export default {
     .nav_item {
         color: white;
         margin: 0.5em;
+        margin-top: 2em;
     }
 
 }

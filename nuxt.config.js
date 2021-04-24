@@ -13,13 +13,17 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     link: [
       {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-      }
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ]
   },
   /*
@@ -35,6 +39,11 @@ export default {
     "@/assets/css/fontello-ie7.css",
     "@/assets/css/fontello-ie7-codes.css"
   ],
+
+  styleResources: {
+    scss: ["./assets/scss/*.scss"]
+  },
+
   /*
    ** Plugins to load before mounting the App
    */
@@ -44,7 +53,8 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/style-resources"
   ],
   /*
    ** Nuxt.js modules

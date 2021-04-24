@@ -1,8 +1,10 @@
 <template>
     <nav class="navigation">
     <div class="name_plus_logo">
-        <img class="page_logo" src="@/assets/logos/mgr.png" />
-        <h3 class="nav_name">Miikka Mäkelä</h3>
+        <nuxt-link class="logo_container" exact to="/">
+            <img class="page_logo" src="@/assets/logos/mgr.png" />
+            <h3 class="nav_name">Miikka Mäkelä</h3>
+        </nuxt-link>
     </div>
     <div class="page_links">
         <nuxt-link exact :class="currentPage.length === 1 ? activeClass : ''" class="nav_item" to="/">HOME</nuxt-link>
@@ -34,10 +36,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .navigation {
     display: none;
+}
+
+.logo_container {
+    display: flex;
 }
 
 @media screen and (max-width: 1050px) {
@@ -46,7 +52,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 621px) {
+@media screen and (min-width: 865px) {
 
     .page_logo {
         width: 32px;
@@ -73,12 +79,17 @@ export default {
         position: absolute;
         top: 0;
         justify-content: space-between;
-        min-width: 99vw;
+        width: 100vw;
+        max-width: 100vw;
         padding-top: 1em;
         padding-bottom: 1em;
         z-index: 100;
-        flex-direction: row;
+        flex-direction: column;
         box-shadow: 0px 5px 10px rgba(47, 47, 47, 0.466);
+
+        @include xl {
+            flex-direction: row;
+        }
     }
 
     .filler {
@@ -89,7 +100,12 @@ export default {
         display: flex;
         flex: 1;
         align-self: center;
-        margin-left: 1em;
+        margin-bottom: 32px;
+
+        @include xl {
+            margin-left: 1em;
+            margin-bottom: 0px;
+        }
     }
 
     .page_links {
@@ -113,6 +129,12 @@ export default {
     .nav_item {
         color: white;
         margin: 0 2em 0 2em;
+    }
+
+    .nav_item:hover {
+        color: white;
+        margin: 0 2em 0 2em;
+        text-shadow: 0px 0px 4px white;
     }
 
 }

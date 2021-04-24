@@ -1,6 +1,8 @@
 <template>
     <div class="journey_row">
-        <span class="circle"></span>
+        <div class="circle_container">
+            <span class="circle"></span>
+        </div>
         <div class="info">
             <h3 class="year_header">{{ year }}</h3>
             <h4 class="season_text">{{ season }}</h4>
@@ -27,11 +29,15 @@ export default {
 
 <style scoped>
 
+.circle_container {
+    display: flex;
+}
+
 .journey_row {
     display: flex;
     flex: 1;
     margin-top: -8px;
-    margin-bottom: 16px
+    margin-bottom: 60px
 }
 
 .info {
@@ -63,7 +69,6 @@ export default {
 
 .desc_style {
     display: flex;
-    width: 25vw;
 }
 
 </style>

@@ -53,15 +53,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .page_container {
-    margin-top: 10em;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 6em;
+
+    @include md {
+        margin-top: 10em;
+    }
 }
 
 #page_insight {
@@ -70,6 +73,11 @@ export default {
     text-align: left;
     margin-bottom: 2em;
     font-size: 1.2em;
+    padding: 40px;
+
+    @include md {
+        padding: 0px;
+    }
 }
 
 .images_cont {
