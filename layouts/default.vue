@@ -34,9 +34,11 @@ export default {
   methods: {
      showModal() {
        this.isModalVisible = true;
+       document.body.classList.add("nav-open");
      },
      closeModal() {
        this.isModalVisible = false;
+       document.body.classList.remove("nav-open");
      }
   },
   
@@ -63,6 +65,10 @@ html {
 body {
   background-color: rgb(22, 22, 22);
   overflow-x: hidden;
+}
+
+.nav-open {
+  overflow: hidden;
 }
 
 ::-moz-selection { /* Code for Firefox */

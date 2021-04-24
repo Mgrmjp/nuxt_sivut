@@ -21,7 +21,7 @@ export default {
                 bullet4: 'Helping, asking questions, honest communication',
             },
             {
-                title: 'Developer ♟',
+                title: 'Developer 🧠',
                 bullet1: 'Avoiding stagnation',
                 bullet2: 'Being open to change',
                 bullet3: 'Learning by doing',
