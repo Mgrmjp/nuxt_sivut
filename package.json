@@ -12,17 +12,18 @@
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
-    "nuxt": "^2.15.4",
-    "vue-country-flag": "^2.0.4",
+    "nuxt": "^2.15.6",
+    "postcss": "^8.2.15",
+    "vue-country-flag": "^2.1.1",
     "vue-gallery-slideshow": "^1.5.2",
     "vue-runtime-helpers": "^1.1.2"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^4.1.1",
     "fibers": "^5.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "sass": "^1.32.11",
-    "sass-loader": "^10.1.1"
+    "sass": "^1.32.13",
+    "sass-loader": "^10"
   }
 }
