@@ -51,6 +51,9 @@
             I learned to value honesty and being more open." />
             <div class="filler"></div>
             <JourneyRow year="2021" season="Spring" description="Started work at Into-Digital doing web development with WordPress." />
+            <div class="filler"></div>
+            <JourneyRow year="2021" season="Summer" description="Self-improvement in good flow and reading as well as inquiry into the self bringing clarity into life.
+            Grasping more about being a developer working in a team." />
         </div>
     </div>
 </template>
