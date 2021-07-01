@@ -1,7 +1,7 @@
 {
-  "name": "Saitit_2020",
-  "version": "1.0.0",
-  "description": "My wondrous Nuxt.js project",
+  "name": "Saitit-2021",
+  "version": "1.1.0",
+  "description": "My portfolio website created using Nuxt.js",
   "author": "mgrmjp",
   "private": true,
   "scripts": {
