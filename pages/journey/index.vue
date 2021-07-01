@@ -74,11 +74,15 @@ export default {
     head () {
         return {
             title: 'Journey ∙ MM',
+            htmlAttrs: {
+              lang: 'en'
+            },
             meta: [
                 { 
                     hid: 'Miikka Mäkelä journey so far',
                     name: 'Opening the journey to this day',
-                    content: 'Giving an overview about key areas and accomplishments.'
+                    content: 'Giving an overview about key areas and accomplishments.',
+                    charset: 'utf-8'
                 }
             ]
         }
@@ -86,8 +90,6 @@ export default {
 
     mounted() {
         let currentDate = new Date()
-
-        console.log(currentDate.getMonth())
 
         let age = currentDate.getMonth() > 8 ? currentDate.getFullYear() - 1996 : currentDate.getFullYear() - 1997
 

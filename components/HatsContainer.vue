@@ -19,10 +19,6 @@ export default {
         hats: {
             Type: Array
         }
-    },
-    
-    mounted() {
-        console.log(this.hats)
     }
 }
 </script>

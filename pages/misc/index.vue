@@ -21,11 +21,15 @@ export default {
     head () {
         return {
             title: 'Misc ∙ MM',
+            htmlAttrs: {
+              lang: 'en'
+            },
             meta: [
                 { 
                   hid: 'Miscellanious information',
                   name: 'Miscellanious information like favorite books',
-                  content: 'Miscellanious information to give a deeper look into fundamentals.'
+                  content: 'Miscellanious information to give a deeper look into fundamentals.',
+                  charset: 'utf-8'
                 }
             ]
     }

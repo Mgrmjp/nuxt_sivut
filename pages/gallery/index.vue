@@ -41,11 +41,15 @@ export default {
     head () {
         return {
             title: 'Gallery ∙ MM',
+            htmlAttrs: {
+              lang: 'en'
+            },
             meta: [
                 { 
                     hid: 'Miikka Mäkelä gallery',
                     name: 'Gallery page for designs',
-                    content: 'Showcasing my design expertise.'
+                    content: 'Showcasing my design expertise.',
+                    charset: 'utf-8'
                 }
             ]
         }

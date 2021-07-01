@@ -59,12 +59,16 @@ export default {
   },
   head () {
     return {
-      title: 'Miikka Mäkelä ∙ 2020',
+      title: 'Miikka Mäkelä ∙ 2021',
+      htmlAttrs: {
+        lang: 'en'
+      },
       meta: [
         { 
           hid: 'Miikka Mäkelä portfolio',
           name: 'Miikka Mäkelä portfolio landing page', 
-          content: 'Miikka Mäkelä is a frontend developer with skills in design as well.'
+          content: 'Miikka Mäkelä is a frontend developer with skills in design as well.',
+          charset: 'utf-8'
         }
       ]
     }
