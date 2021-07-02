@@ -59,16 +59,12 @@ export default {
   },
   head () {
     return {
-      title: 'Miikka Mäkelä ∙ 2021',
-      htmlAttrs: {
-        lang: 'en'
-      },
+      title: 'Miikka Mäkelä ∙ Finnish Web Developer ∙ 2021',
       meta: [
         { 
           hid: 'Miikka Mäkelä portfolio',
           name: 'Miikka Mäkelä portfolio landing page', 
-          content: 'Miikka Mäkelä is a frontend developer with skills in design as well.',
-          charset: 'utf-8'
+          content: 'Miikka Mäkelä is a mainly a web developer with skills in design and UX.'
         }
       ]
     }
@@ -78,11 +74,6 @@ export default {
 </script>
 
 <style lang="scss">
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 
 .index_container {
   display: flex;

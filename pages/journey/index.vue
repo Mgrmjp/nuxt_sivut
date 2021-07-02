@@ -77,15 +77,11 @@ export default {
     head () {
         return {
             title: 'Journey ∙ MM',
-            htmlAttrs: {
-              lang: 'en'
-            },
             meta: [
                 { 
                     hid: 'Miikka Mäkelä journey so far',
-                    name: 'Opening the journey to this day',
-                    content: 'Giving an overview about key areas and accomplishments.',
-                    charset: 'utf-8'
+                    name: 'Opening the journey up until to this day',
+                    content: 'Giving an overview about key areas of growth and accomplishments.'
                 }
             ]
         }
