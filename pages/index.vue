@@ -1,12 +1,13 @@
 <template>
     <div class="index_container">
         <p class="self_intro">
-          Miikka Mäkelä is a front-end developer 👓, graphic designer 💻 and much more—once you get to know him.
+          Miikka Mäkelä is mainly a web developer 👓, graphic designer 💻 and much more—once you get to know him. He believe anything can be
+          learned if you invest enough time and energy.
           This portfolio site was created with <a id="nuxt_link" href="https://nuxtjs.org/">Nuxt.js</a> and brought online with 
-          GitHub Pages and Netlify. My goal is to one day be good enough so I can help others in their journey through life. 🌟
+          GitHub Pages and Netlify. My goal is to grow so I can be of use to others and create. 🌟
         </p>
         <h2 class="quote">"Learn More, Know Less" ~ Neil Strauss</h2>
-        <h1 class="large_header">THINGS I HAVE IMPROVED @</h1>
+        <h1 class="large_header">THINGS I HAVE IMPROVED AT</h1>
         <div class="skills">
           <div class="skill_box">
             <div class="skill_wrapper">
