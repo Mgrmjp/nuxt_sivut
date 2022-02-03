@@ -71,23 +71,28 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .large_header {
   font-size: 3.8em;
   font-weight: 900;
   color: rgb(253, 253, 253);
   text-align: center;
-  margin-top: 112px;
+  margin-top: 56px;
   text-shadow: 0px 0px 2px rgb(253, 253, 253);
+  line-height: 1;
 }
 
 .desc_header {
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: lighter;
   color: rgb(253, 253, 253);
   text-align: center;
   margin-bottom: 48px;
+
+  @include md {
+      font-size: 1.2em;
+  }
 }
 
 </style>

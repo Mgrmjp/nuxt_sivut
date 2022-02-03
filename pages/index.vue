@@ -1,7 +1,7 @@
 <template>
     <div class="index_container">
         <p class="self_intro">
-          Miikka Mäkelä is a front-end developer 👓, graphic designer 💻 and much more—once you get to know him.
+          Miikka Mäkelä is a front-end developer 👓, graphic designer 💻 and much more.
           This portfolio site was created with <a id="nuxt_link" href="https://nuxtjs.org/">Nuxt.js</a> and brought online with 
           GitHub Pages and Netlify. My goal is to one day be good enough so I can help others in their journey through life. 🌟
         </p>
@@ -58,8 +58,10 @@ export default {
     SkillContainer
   },
   head () {
+    const d = new Date();
+    let year = d.getFullYear();
     return {
-      title: 'Miikka Mäkelä ∙ 2020',
+      title: 'Miikka Mäkelä ∙ ' + year,
       meta: [
         { 
           hid: 'Miikka Mäkelä portfolio',
@@ -90,15 +92,10 @@ export default {
   margin-top: 2em;
   color: white;
   text-align: left;
-  width: 60%;
+  width: 70%;
   align-self: center;
   font-size: 1.1em;
-  margin-bottom: 4em;
-
-  @include md {
-    margin-top: 6em;
-  }
-
+  margin-bottom: 2em;
 }
 
 #nuxt_link {

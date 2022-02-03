@@ -9,7 +9,7 @@
         dreamed of so they can see that's not the answer." ~ Jim Carrey</h2>
 
         <div class="email_and_cv">
-        <h3 class="email_text">Reach me <i class="icon-mgr-logo bullet_icon" /> miikka.mla[at]gmail.com</h3>
+        <span class="email_text">Reach me <i class="icon-mgr-logo bullet_icon" /> miikka.mla[at]gmail.com</span>
 
         <div class="links_to_pages">
             <a class="page_linky" href="https://instagram.com/mgrutkast">Instagram</a>
@@ -51,6 +51,8 @@
             I learned to value honesty and being more open." />
             <div class="filler"></div>
             <JourneyRow year="2021" season="Spring" description="Started work at Into-Digital doing web development with WordPress." />
+            <JourneyRow year="2021" season="Fall" description="Struggled to keep up with constant changes and trying to make sure I did good enough work. Finding one's place in the company culture seems to take time." />
+            <JourneyRow year="2022" season="Spring" description="Getting closer to a year at Into. Signs of growth are definitely there and confidence with WordPress and Javascript has grown nicely. 🍃" />
         </div>
     </div>
 </template>
@@ -86,11 +88,7 @@ export default {
 
     mounted() {
         let currentDate = new Date()
-
-        console.log(currentDate.getMonth())
-
         let age = currentDate.getMonth() > 8 ? currentDate.getFullYear() - 1996 : currentDate.getFullYear() - 1997
-
         this.currentAge = age
     }
 }
@@ -104,7 +102,7 @@ export default {
 
 .page_container {
     display: flex;
-    margin-top: 7em;
+    margin-top: 4em;
     text-align: left;
     min-width: 30vw;
     justify-content: center;
@@ -116,7 +114,7 @@ export default {
     flex-direction: row;
     align-self: center;
     padding-top: 3em;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 }
 
 .age_style {
@@ -138,9 +136,15 @@ export default {
   font-size: 1em;
   color: white;
   font-style: italic;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   width: 90%;
   align-self: center;
+  text-align: center;
+  max-width: 600px;
+
+  @include md {
+        margin-bottom: 4em;
+  }
 }
 
 .email_and_cv {
@@ -153,12 +157,17 @@ export default {
     text-align: left;
     align-self: center;
     display: flex;
+    flex-direction: column;
     flex: 1;
     margin-bottom: 2em;
     color: rgba(253, 253, 253, 0.938);
     font-weight: 100;
     font-size: 1em;
     letter-spacing: 1px;
+
+    @include md {
+        flex-direction: row;
+    }
 }
 
 .links_to_pages {
@@ -190,8 +199,12 @@ export default {
 }
 
 .boldy {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0;
+
+    @include md {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 }
 
 .flaggy {
@@ -200,14 +213,18 @@ export default {
 
 .cv_text {
     display: flex;
+    flex-direction: column;
     text-align: left;
     color: rgba(253, 253, 253, 1);
     font-weight: 400;
     font-size: 1.1em;
     letter-spacing: 1px;
-    flex-direction: row;
     padding: 0.8em;
     align-self: center;
+
+    @include md {
+        flex-direction: row;
+    }
 }
 
 .border_test {

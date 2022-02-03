@@ -1,7 +1,7 @@
 {
-  "name": "Saitit_2020",
-  "version": "1.0.0",
-  "description": "My wondrous Nuxt.js project",
+  "name": "Saitit_2022",
+  "version": "2.0.0",
+  "description": "Portfolio site with nuxtjs.",
   "author": "mgrmjp",
   "private": true,
   "scripts": {
@@ -13,9 +13,10 @@
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "nuxt": "^2.15.6",
+    "photoswipe": "^4.1.3",
     "postcss": "^8.2.15",
     "vue-country-flag": "^2.1.1",
-    "vue-gallery-slideshow": "^1.5.2",
+    "vue-gallery": "^2.0.1",
     "vue-runtime-helpers": "^1.1.2"
   },
   "devDependencies": {
@@ -25,5 +26,22 @@
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.32.13",
     "sass-loader": "^10"
-  }
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all",
+    "last 3 version",
+    "Chrome >= 35",
+    "Firefox >= 38",
+    "Edge >= 10",
+    "Explorer >= 10",
+    "ie >= 10",
+    "iOS >= 8",
+    "Safari >= 8",
+    "Android 2.3",
+    "Android >= 4",
+    "Opera >= 12"
+  ]
 }

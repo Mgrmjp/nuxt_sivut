@@ -19,10 +19,6 @@ export default {
         hats: {
             Type: Array
         }
-    },
-    
-    mounted() {
-        console.log(this.hats)
     }
 }
 </script>
@@ -40,28 +36,26 @@ export default {
 .list_container {
     text-align: left;
     width: 35vw;
-    margin-bottom: 4em;
+    margin-bottom: 1.5em;
 }
 
 .hats_title {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .bullet_icon {
-    color: white;
-    font-size: 10px;
-    align-self: center;
-    margin: 10px;
-    line-height: 8px;
+    color: rgb(68, 15, 15);
+    font-size: 24px;
+    margin-top: 16px;
+    margin-right: -8px;
 }
 
 li {
     display: flex;
     color: white;
-    align-items: center;
     font-size: 1.2em;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -69,7 +63,7 @@ li {
 
 @media only screen and (max-width: 910px) {
     .list_container {
-        width: 55vw;
+        width: 75vw;
     }
 }
 
