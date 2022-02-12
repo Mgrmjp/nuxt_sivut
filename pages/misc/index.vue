@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .container_misc {
   display: flex;
@@ -57,7 +57,7 @@ export default {
   color: rgb(253, 253, 253);
   text-align: center;
   margin-bottom: 48px;
-  margin-top: 10em;
+  margin-top: 4em;
 }
 
 .book_list {
@@ -77,6 +77,9 @@ export default {
 }
 
 .number_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid white;
   border-radius: 100px;
   min-width: 40px;

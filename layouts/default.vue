@@ -53,18 +53,18 @@ export default {
 <style lang="scss">
 
 html {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Hind Siliguri', sans-serif;
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
 body {
   background-color: rgb(22, 22, 22);
   overflow-x: hidden;
+}
+
+a {
+  transition: all 0.1s ease-in-out;
 }
 
 .nav-open {
@@ -105,21 +105,76 @@ body {
 }
 
 .outer_red {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex: 1;
   min-height: 100vh;
   background-color: rgba(75, 21, 21, 0.692);
+  background: linear-gradient(rgba(75, 21, 21, 0.692) 0%, rgba(75, 21, 21, 0) 1000px);
   justify-content: center;
   width: 65vw;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 1000px solid #161616;
+    border-right: 120px solid transparent;
+    transform: scaleY(-1);
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 1000px solid #161616;
+    border-left: 120px solid transparent;
+    transform: scaleY(-1);
+  }
 }
 
+$innertriangesize: 40px;
+
 .inner_red {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex: 1;
   flex-direction: column;
   min-height: 100vh;
   max-width: 50vw;
   background-color: rgba(126, 28, 28, 0.787);
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: $innertriangesize solid #161616;
+    border-right: $innertriangesize solid transparent;
+    transform: scaleY(-1);
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: $innertriangesize solid #161616;
+    border-left: $innertriangesize solid transparent;
+    transform: scaleY(-1);
+  }
 }
 
 *,

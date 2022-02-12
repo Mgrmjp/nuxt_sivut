@@ -1,8 +1,8 @@
 <template>
     <div class="page_container">
         <div class="age_cont">
-            <h1 class="age_style">{{ currentAge }}</h1>
-            <h2 class="birthdate_text">years old</h2>
+            <span class="age_style">{{ currentAge }}</span>
+            <p class="birthdate_text">years old</p>
         </div>
 
         <h2 class="quote">"I wish everyone could get rich and famous and everything they ever 
@@ -112,7 +112,8 @@ export default {
 .age_cont {
     display: flex;
     flex-direction: row;
-    align-self: center;
+    justify-content: center;
+    align-items: flex-end;
     padding-top: 3em;
     padding-bottom: 2em;
 }
@@ -122,7 +123,8 @@ export default {
     font-size: 5em;
     font-weight: 900;
     align-self: flex-end;
-    line-height: 0.8em;
+    line-height: 0.6;
+    margin: 0;
 }
 
 .birthdate_text {
@@ -161,7 +163,7 @@ export default {
     flex: 1;
     margin-bottom: 2em;
     color: rgba(253, 253, 253, 0.938);
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1em;
     letter-spacing: 1px;
 

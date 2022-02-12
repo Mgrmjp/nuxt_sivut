@@ -6,7 +6,7 @@
           GitHub Pages and Netlify. My goal is to one day be good enough so I can help others in their journey through life. 🌟
         </p>
         <h2 class="quote">"Learn More, Know Less" ~ Neil Strauss</h2>
-        <h1 class="large_header">THINGS I HAVE IMPROVED @</h1>
+        <h1 class="large_header">VARYING LEVELS OF USAGE <br /> WITH THESE</h1>
         <div class="skills">
           <div class="skill_box">
             <div class="skill_wrapper">
@@ -117,6 +117,8 @@ export default {
   text-align: center;
   text-shadow: 0px 0px 4px rgb(253, 253, 253);
   margin-bottom: 32px;
+  line-height: 1;
+  animation: textfloat 4s infinite ease-in-out;
 }
 
 .quote {
@@ -170,6 +172,20 @@ export default {
   @include md {
     text-align: left;
     margin-top: 0px;
+  }
+}
+
+@keyframes textfloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(4px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 

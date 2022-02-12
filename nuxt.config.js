@@ -20,11 +20,6 @@ export default {
             {
                 rel: "stylesheet",
                 href:
-                    "https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-            },
-            {
-                rel: "stylesheet",
-                href:
                     "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
             },
             { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
@@ -41,7 +36,8 @@ export default {
         "@/assets/css/animation.css",
         "@/assets/css/fontello.css",
         "@/assets/css/fontello-ie7.css",
-        "@/assets/css/fontello-ie7-codes.css"
+        "@/assets/css/fontello-ie7-codes.css",
+        "@/assets/css/normalize.css"
     ],
 
     styleResources: {
@@ -58,7 +54,8 @@ export default {
     buildModules: [
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
         "@nuxtjs/tailwindcss",
-        "@nuxtjs/style-resources"
+        "@nuxtjs/style-resources",
+        "@nuxtjs/google-fonts"
     ],
     /*
      ** Nuxt.js modules
@@ -72,5 +69,14 @@ export default {
          ** You can extend webpack config here
          */
         extend(config, ctx) {}
+    },
+    googleFonts: {
+        families: {
+            "Hind+Siliguri": {
+                wght: [300, 400, 500, 600, 700, 900],
+                ital: [300, 400, 500]
+            }
+        },
+        display: "swap"
     }
 };

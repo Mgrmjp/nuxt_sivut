@@ -1,25 +1,39 @@
 <template>
     <div class="page_container">
         <h1 id="page_insight">Design is not only about putting stuff in—but it is also about leaving stuff out.</h1>
-        <div class="images_cont">
-            <div>
-
+        <viewer class="images" :images="images">
+            <div v-for="src in images" :key="src" class="image-wrapper">
+                <img alt="" :src="require(`~/assets/img/${src}.jpg`)">
             </div>
-        </div>
+        </viewer>
     </div>
 </template>
 
 <script>
+import 'viewerjs/dist/viewer.css'
+import VueViewer from 'v-viewer'
+import Vue from 'vue'
 
+Vue.use(VueViewer)
 
 export default {
-
     data() {
         return {
-
+            images: [
+                "counterpoints",
+                "defendix",
+                "havu_avi",
+                "imperial",
+                "mindsofmedia",
+                "steam",
+                "summoning_insight_redesign",
+                "teo",
+                "voo_avi",
+                "worlds_champselect",
+                "worlds_ingame"
+            ]
         }
     },
-
     head () {
         return {
             title: 'Gallery ∙ MM',
@@ -31,7 +45,14 @@ export default {
                 }
             ]
         }
-    }
+    },
+    methods: {
+      show() {
+        this.$viewerApi({
+          images: this.images,
+        })
+      },
+    },
 }
 
 </script>
@@ -63,21 +84,28 @@ export default {
     }
 }
 
-.images_cont {
+.images {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 100vw;
+
+    .image-wrapper {
+        display: flex;
+        flex-basis: 40%;
+        margin-bottom: 1em;
+        box-shadow: 0 4px 24px rgba(10, 10, 10, 0.25);
+        max-height: 120px;
+
+        @include md {
+            flex-basis: 30%;
+        }
+
+        img {
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
 }
 
-.image {
-    max-width: 300px;
-    cursor: pointer;
-    object-fit: cover;
-    box-shadow: 0px 5px 5px rgba(29, 29, 29, 0.479);
-    object-position: top;
-    flex: 0 50%;
-    margin: 2em;
-}
 
 </style>

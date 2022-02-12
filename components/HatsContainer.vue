@@ -44,21 +44,23 @@ export default {
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-bottom: 24px;
 }
 
 .bullet_icon {
     color: rgb(68, 15, 15);
     font-size: 24px;
-    margin-top: 16px;
+    margin-top: 8px;
     margin-right: -8px;
 }
 
 li {
     display: flex;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 8px;
     margin-bottom: 8px;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 910px) {

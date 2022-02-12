@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .circle_container {
     display: flex;
@@ -58,6 +58,7 @@ export default {
 }
 
 .circle {
+    position: relative;
     height: 16px;  
     width: 16px;
     background-color: white;
@@ -65,10 +66,54 @@ export default {
     align-self: flex-start;
     margin: 4px;
     margin-left: -9px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+        height: 16px;
+        width: 16px;
+        transform: scale(1) translateX(-3px);
+        animation: pulse-white 2s infinite;
+    }
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
 }
 
 .desc_style {
+    position: relative;
     display: flex;
+    font-weight: 300;
+    padding-top: 12px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background: white;;
+    }
 }
 
 </style>
