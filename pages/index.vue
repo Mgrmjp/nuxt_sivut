@@ -1,21 +1,12 @@
 <template>
     <div class="index_container">
         <p class="self_intro">
-<<<<<<< HEAD
           Miikka Mäkelä is a front-end developer 👓, graphic designer 💻 and much more.
-=======
-          Miikka Mäkelä is mainly a web developer 👓, graphic designer 💻 and much more—once you get to know him. He believes anything can be
-          learned if you invest enough time and energy.
->>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
           This portfolio site was created with <a id="nuxt_link" href="https://nuxtjs.org/">Nuxt.js</a> and brought online with 
           GitHub Pages and Netlify. My goal is to grow so I can be of use to others and create. 🌟
         </p>
         <h2 class="quote">"Learn More, Know Less" ~ Neil Strauss</h2>
-<<<<<<< HEAD
         <h1 class="large_header">VARYING LEVELS OF USAGE <br /> WITH THESE</h1>
-=======
-        <h1 class="large_header">THINGS I HAVE IMPROVED AT</h1>
->>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
         <div class="skills">
           <div class="skill_box">
             <div class="skill_wrapper">
@@ -70,11 +61,7 @@ export default {
     const d = new Date();
     let year = d.getFullYear();
     return {
-<<<<<<< HEAD
       title: 'Miikka Mäkelä ∙ ' + year,
-=======
-      title: 'Miikka Mäkelä ∙ Finnish Web Developer ∙ 2021',
->>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
       meta: [
         { 
           hid: 'Miikka Mäkelä portfolio',

@@ -1,5 +1,4 @@
 export default {
-<<<<<<< HEAD
     /*
      ** Headers of the page
      */
@@ -39,26 +38,8 @@ export default {
         "@/assets/css/fontello-ie7.css",
         "@/assets/css/fontello-ie7-codes.css",
         "@/assets/css/normalize.css"
-=======
-  /*
-   ** Headers of the page
-   */
-  head: {
-    title: process.env.npm_package_name || "",
-    htmlAttrs: {
-      lang: 'en'
-    },
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || ""
-      }
->>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
     ],
-
+ 
     styleResources: {
         scss: ["./assets/scss/*.scss"]
     },
