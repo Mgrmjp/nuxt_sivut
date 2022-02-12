@@ -8,10 +8,6 @@
           <div class="book_item"><span class="number_style">4</span> <p><strong>Marie Forleo</strong> • Everything is Figureoutable</p></div>
           <div class="book_item"><span class="number_style">5</span> <p><strong>Simon Sinek</strong> • Start With Why</p></div>
         </ul>
-        <div>
-            <p>
-            </p>
-        </div>
     </div>    
 </template>
 
@@ -24,8 +20,8 @@ export default {
             meta: [
                 { 
                   hid: 'Miscellanious information',
-                  name: 'Miscellanious information like favorite books',
-                  content: 'Miscellanious information to give a deeper look into fundamentals.'
+                  name: 'Miscellanious information like favorite books.',
+                  content: 'Miscellanious information.'
                 }
             ]
     }

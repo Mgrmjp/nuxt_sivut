@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "Saitit_2022",
   "version": "2.0.0",
   "description": "Portfolio site with nuxtjs.",
+=======
+  "name": "Saitit-2021",
+  "version": "1.1.0",
+  "description": "Miikka Mäkelä portfolio website created using Nuxt.js",
+>>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
   "author": "mgrmjp",
   "private": true,
   "scripts": {
@@ -15,10 +21,18 @@
     "nuxt": "^2.15.6",
     "photoswipe": "^4.1.3",
     "postcss": "^8.2.15",
+<<<<<<< HEAD
     "v-viewer": "^1.6.4",
     "vue-country-flag": "^2.1.1",
     "vue-gallery": "^2.0.1",
     "vue-runtime-helpers": "^1.1.2"
+=======
+    "vue": "^2.6.14",
+    "vue-country-flag": "^2.1.1",
+    "vue-gallery-slideshow": "^1.5.2",
+    "vue-runtime-helpers": "^1.1.2",
+    "vue-template-compiler": "^2.6.14"
+>>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^1.3.0",

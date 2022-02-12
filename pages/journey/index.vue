@@ -51,8 +51,14 @@
             I learned to value honesty and being more open." />
             <div class="filler"></div>
             <JourneyRow year="2021" season="Spring" description="Started work at Into-Digital doing web development with WordPress." />
+<<<<<<< HEAD
             <JourneyRow year="2021" season="Fall" description="Struggled to keep up with constant changes and trying to make sure I did good enough work. Finding one's place in the company culture seems to take time." />
             <JourneyRow year="2022" season="Spring" description="Getting closer to a year at Into. Signs of growth are definitely there and confidence with WordPress and Javascript has grown nicely. 🍃" />
+=======
+            <div class="filler"></div>
+            <JourneyRow year="2021" season="Summer" description="Self-improvement in good flow and reading as well as inquiry into the self bringing clarity into life.
+            Grasping more about being a developer working in a team." />
+>>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
         </div>
     </div>
 </template>
@@ -79,8 +85,8 @@ export default {
             meta: [
                 { 
                     hid: 'Miikka Mäkelä journey so far',
-                    name: 'Opening the journey to this day',
-                    content: 'Giving an overview about key areas and accomplishments.'
+                    name: 'Opening the journey up until to this day',
+                    content: 'Giving an overview about key areas of growth and accomplishments.'
                 }
             ]
         }
@@ -88,6 +94,10 @@ export default {
 
     mounted() {
         let currentDate = new Date()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8293dd569d982107b6c0d8ac75b18534b56cf153
         let age = currentDate.getMonth() > 8 ? currentDate.getFullYear() - 1996 : currentDate.getFullYear() - 1997
         this.currentAge = age
     }
