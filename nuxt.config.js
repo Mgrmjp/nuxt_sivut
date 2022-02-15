@@ -1,7 +1,18 @@
+const main_base_URL = "https://miikka-m.fi";
+
 export default {
     /*
      ** Headers of the page
      */
+
+    sitemap: {
+        hostname: main_base_URL
+    },
+
+    env: {
+        main_base_URL
+    },
+
     head: {
         title: process.env.npm_package_name || "",
         meta: [
@@ -39,7 +50,7 @@ export default {
         "@/assets/css/fontello-ie7-codes.css",
         "@/assets/css/normalize.css"
     ],
- 
+
     styleResources: {
         scss: ["./assets/scss/*.scss"]
     },
@@ -60,7 +71,7 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: ["@nuxtjs/sitemap"],
     /*
      ** Build configuration
      */
