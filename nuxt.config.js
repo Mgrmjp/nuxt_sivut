@@ -6,7 +6,11 @@ export default {
      */
 
     sitemap: {
-        hostname: main_base_URL
+        hostname: main_base_URL,
+
+        defaults: {
+            lastmod: new Date()
+        }
     },
 
     env: {
